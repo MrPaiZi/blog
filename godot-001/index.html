@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://mrpaizi.github.io/blog/godot-001/stretch-all-on.gif">
 <meta property="og:image" content="https://mrpaizi.github.io/blog/godot-001/stretch-on.gif">
 <meta property="article:published_time" content="2022-05-10T09:39:05.000Z">
-<meta property="article:modified_time" content="2022-05-10T12:22:44.979Z">
+<meta property="article:modified_time" content="2022-05-10T13:05:35.151Z">
 <meta property="article:author" content="拍子君">
 <meta property="article:tag" content="Godot">
 <meta name="twitter:card" content="summary">
@@ -118,10 +118,10 @@
 <p>如果<code>Test Width</code>和<code>Test Height</code>设为<code>640 * 360</code>，也就是窗口宽高的两倍，启动游戏后结果为：</p>
 <p><img src="/blog/godot-001/test-is-not-0.png"></p>
 <p>其实<code>Test Width</code>和<code>Test Height</code>两个选项就相当于<strong>将原窗口拉大</strong>的操作：</p>
-<p><img src="/blog/godot-001/stretch.gif" alt="stretch"></p>
+<p><img src="/blog/godot-001/stretch.gif"></p>
 <p>可以看出，在默认状态下，窗口的拉伸与我们的通常的需求不一致。画面的大小和比例改变了，画面里的内容却并没有随着拉伸。这是因为没有设置<strong>拉伸模式</strong>。</p>
 <p>启用<strong>拉伸模式</strong>设置时，将以以上参数为基础，改变显示效果。</p>
-<h2 id="拉伸模式"><a href="#拉伸模式" class="headerlink" title="拉伸模式"></a>拉伸模式</h2><p>滚动到该小节的底部，在<code>Stretch</code>（拉伸）选项中，有一个<code>Mode</code>选项，默认为<code>disabled</code>；<code>Aspect</code>选项，默认为<code>ignore</code>。</p>
+<h2 id="拉伸模式"><a href="#拉伸模式" class="headerlink" title="拉伸模式"></a>拉伸模式</h2><p>滚动到该小节的底部，在<code>Stretch</code>（拉伸）选项中，有两个重要选项：<code>Mode</code>选项，默认为<code>disabled</code>；<code>Aspect</code>选项，默认为<code>ignore</code>。</p>
 <p><img src="/blog/godot-001/setting-stretch-mode.png" alt="设置拉伸模式"></p>
 <p>将<code>Mode</code>设置为<code>2d</code>，<code>Aspect</code>设置为<code>keep</code>或<code>expand</code>。这样就可以保证在不同大小的屏幕上，游戏都能够进行一致的比例缩放：</p>
 <p><img src="/blog/godot-001/stretch-all-on.gif"></p>
